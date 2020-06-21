@@ -1,0 +1,4 @@
+sleep 5
+echo 'Hi! I am r1' > /etc/init-exec.log
+chmod a+x /etc/init.sh
+sg vyattacfg -c /etc/init.sh

@@ -1,0 +1,16 @@
+. {
+    file /hostlab/dns_root/dns.root
+    log
+}
+
+de {
+    file /hostlab/dns_root/dns.de
+    log
+}
+
+org {
+    forward org 2.2.2.2
+    log
+}
+
+

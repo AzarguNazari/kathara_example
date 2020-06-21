@@ -1,0 +1,17 @@
+$TTL   60000
+@           IN SOA dns.de. root.dns.de. (
+						1591274593 ; Serial Number 
+						7200       ; Refersh 
+						7200 	   ; REtry 
+						3600000    ; Expire
+						7200       ; Minimum
+					    )
+
+
+@               IN      NS      dns.de.
+dns	IN	A	1.1.1.1
+
+gik.    IN NS 	gik.de.
+gik     IN A	 10.0.10.1
+
+

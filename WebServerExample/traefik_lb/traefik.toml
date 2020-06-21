@@ -1,0 +1,10 @@
+[entryPoints]
+  [entryPoints.web]
+    # Listen on port 80 for incoming requests
+    address = ":80"
+
+[providers]
+  # Enable the file provider to define routers / middlewares / services in file
+  [providers.file]
+    directory = "/hostlab/traefik_lb/rules"
+

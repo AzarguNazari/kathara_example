@@ -1,0 +1,11 @@
+. {
+	forward . 1.1.1.1
+	log
+}
+
+org {
+    file /hostlab/dns_lb/dns.org
+    loadbalance round_robin     
+    log
+}
+

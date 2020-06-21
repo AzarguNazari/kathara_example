@@ -1,0 +1,34 @@
+[http]
+  [http.routers]
+     [http.routers.application]
+       rule = "Host(`gik.de`)"
+       service = "application"
+
+  [http.services]
+  # Define how to reach an existing service on our infrastructure
+	[http.services.application]
+	    [[http.services.application.weighted.services]]
+	      name = "weight_sheldon"
+	      weight = 6
+	    [[http.services.application.weighted.services]]
+	      name = "weight_leonard"
+	      weight = 3
+	    [[http.services.application.weighted.services]]
+	      name = "weight_howard"
+	      weight = 1
+
+	[http.services.weight_sheldon]
+	    [http.services.weight_sheldon.loadBalancer]
+	      [[http.services.weight_sheldon.loadBalancer.servers]]
+		url = "http://40.40.0.100"
+
+        [http.services.weight_leonard]
+	    [http.services.weight_leonard.loadBalancer]
+	      [[http.services.weight_leonard.loadBalancer.servers]]
+		url = "http://40.40.0.101"
+
+       [http.services.weight_howard]
+	    [http.services.weight_howard.loadBalancer]
+	      [[http.services.weight_howard.loadBalancer.servers]]
+		url = "http://40.40.0.102"
+

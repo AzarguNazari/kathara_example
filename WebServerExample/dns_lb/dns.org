@@ -1,0 +1,22 @@
+$TTL   60000
+@           IN SOA dns.org. root.dns.org. (
+						1591274593 ; Serial Number 
+						7200       ; Refersh 
+						7200 	   ; REtry 
+						3600000    ; Expire
+						7200       ; Minimum
+					    )
+
+@               IN      NS      dns.org.
+dns	IN	A	2.2.2.2
+        IN	NS	gik.org.
+
+
+gik     IN A	 50.50.0.100
+        
+
+gik     IN A	 50.50.0.101
+        
+
+gik     IN A	 50.50.0.102
+        

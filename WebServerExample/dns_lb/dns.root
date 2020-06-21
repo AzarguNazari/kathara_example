@@ -1,0 +1,22 @@
+$TTL   60000
+@               IN      SOA     ROOT-SERVER.    root.ROOT-SERVER. (
+                        2006031201 ; serial
+                        28800 ; refresh
+                        14400 ; retry
+                        3600000 ; expire
+                        0 ; negative cache ttl
+                        )
+
+@               IN      NS      ROOT-SERVER.
+ROOT-SERVER.	IN	A	1.1.1.1
+
+de.		IN 	NS	gik.de.
+gik.de	IN 	A	40.40.0.100
+
+org.		IN	NS	gik.org.
+gik.org     	IN A	 50.50.0.100
+             	
+gik.org     	IN A	 50.50.0.101
+             	
+gik.org     	IN A	 50.50.0.102
+             
