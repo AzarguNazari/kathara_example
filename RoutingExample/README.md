@@ -1,7 +1,23 @@
 
+To know about lab.conf [kathara lab.conf](kathara.org/man-pages/kathara-lab.conf.5.html)
 
-- `kathara vstart --eth 0:A -n computer1`
-- `kathara vstart --eth 0:A -n comptuer2`
+### Important commands
+- `device[arg]=value`
+- `image`
+- `mem`
+- `cpus`
+- `port`
+- `bridged`
+- `exec`
+- `systcl`
 
-configuring each computer
-comptue1:@# ifconfig eth0 10.0.0.1 netmask 255.255.255.0 broadcast 10.0.0.255 up
+### Lab Meta Information
+```
+LAB_DESCRIPTION="A sample example of lab.conf"
+LAB_VERSION=1.0
+LAB_AUTHOR="Kathara Authors"
+LAB_EMAIL="contact@email.com
+LAB_WEB=http:web.com
+```
+
+
